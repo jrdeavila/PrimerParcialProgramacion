@@ -7,3 +7,5 @@ D:\Escritorio\Parcial\AfiliacionUPC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.c
 D:\Escritorio\Parcial\AfiliacionUPC\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\Escritorio\Parcial\AfiliacionUPC\DAL\obj\Debug\DAL.dll
 D:\Escritorio\Parcial\AfiliacionUPC\DAL\obj\Debug\DAL.pdb
+D:\Escritorio\Parcial\AfiliacionUPC\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\Escritorio\Parcial\AfiliacionUPC\DAL\bin\Debug\Newtonsoft.Json.xml

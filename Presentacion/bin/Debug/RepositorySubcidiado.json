@@ -1,0 +1,16 @@
+[
+  {
+    "Afiliado": {
+      "Nombre": "Jose Ricardo",
+      "Cedula": 1003316620,
+      "Afiliacion": "Subcidiado",
+      "Sexo": "Masculino",
+      "Edad": 19
+    },
+    "NumeroLiquidacion": 508345,
+    "PrimaAdicional": 1.0,
+    "DiasAfiliacion": 29,
+    "ValorUPCdiaria": 2000.0,
+    "LiquidacionAficiliacion": 58000.0
+  }
+]

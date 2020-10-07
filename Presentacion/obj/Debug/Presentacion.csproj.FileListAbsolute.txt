@@ -10,3 +10,7 @@ D:\Escritorio\Parcial\AfiliacionUPC\Presentacion\bin\Debug\Entity.pdb
 D:\Escritorio\Parcial\AfiliacionUPC\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
 D:\Escritorio\Parcial\AfiliacionUPC\Presentacion\obj\Debug\Presentacion.exe
 D:\Escritorio\Parcial\AfiliacionUPC\Presentacion\obj\Debug\Presentacion.pdb
+D:\Escritorio\Parcial\AfiliacionUPC\Presentacion\bin\Debug\DAL.dll
+D:\Escritorio\Parcial\AfiliacionUPC\Presentacion\bin\Debug\Newtonsoft.Json.dll
+D:\Escritorio\Parcial\AfiliacionUPC\Presentacion\bin\Debug\DAL.pdb
+D:\Escritorio\Parcial\AfiliacionUPC\Presentacion\bin\Debug\Newtonsoft.Json.xml
