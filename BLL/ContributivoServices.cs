@@ -24,6 +24,19 @@ namespace BLL
             return Repository.ListContributivos;
         }
 
+        public void EliminarLiquidacion(long NumeroLiquidacion)
+        {
+            List<LiquidacionContributivo> NuevaListaContributivos = new List<LiquidacionContributivo>();
+            foreach (LiquidacionContributivo i in Repository.ListContributivos)
+            {
+                if (NumeroLiquidacion != i.NumeroLiquidacion)
+                {
+                    NuevaListaContributivos.Add(i);
+                }
+            }
+            Repository.ListContributivos = NuevaListaContributivos;
+            Repository.GuardarEnRepostorio();
+        }
         public LiquidacionContributivo BuscarPorNumeroDeLiquidacion(long NumeroLiquidacion)
         {
             LiquidacionContributivo liquidacionEncontrada = null;

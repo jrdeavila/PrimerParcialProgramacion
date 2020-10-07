@@ -38,6 +38,7 @@ namespace DAL
         public string CrearSerialJson() { return JsonConvert.SerializeObject(ListContributivos, Formatting.Indented); }
         public void GuardarEnRepostorio()
         {
+            SerialJson = CrearSerialJson();
             using (StreamWriter Writer = File.CreateText(Path))
             {
                 Writer.Write(SerialJson);

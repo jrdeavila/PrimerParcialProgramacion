@@ -53,8 +53,9 @@ namespace Presentacion
                 case 0: { break; }
                 case 1: { GuardarInformacion(DiligenciarInformacion()); new GestionLiquidacionAfiliado(); break; }
                 case 2: { ConsultarInformacion(); new GestionLiquidacionAfiliado(); break; }
-                case 3: { new GestionLiquidacionAfiliado(); break; }
+                case 3: { EliminarLiquidacion(); new GestionLiquidacionAfiliado(); break; }
                 case 4: { new GestionLiquidacionAfiliado(); break; }
+                default: { new GestionLiquidacionAfiliado(); break; }
             } 
         }
 
@@ -118,6 +119,7 @@ namespace Presentacion
             //Console.WriteLine("\nEscriba el numero de liquidaicion para ver la informacion");
             NumeroLiquidacion = (long)isNumber("\nNumero de Liquidacion: ");
             foreach (LiquidacionAfiliado i in TodasLasLiquidaciones) { if (NumeroLiquidacion == i.NumeroLiquidacion) LiquidacionEncontrada = i; }
+            if (LiquidacionEncontrada == null) Console.WriteLine("Este numero de liquidacion no esta registrado");
             return LiquidacionEncontrada;
         }
         public void ConsultarInformacion()
@@ -129,7 +131,18 @@ namespace Presentacion
         public void EliminarLiquidacion()
         {
             LiquidacionAfiliado LiquidacionAEliminar = BuscarLiquidacion();
-            if (LiquidacionAEliminar is LiquidacionContributivo) ;
+            if(LiquidacionAEliminar != null)
+            {
+                if (LiquidacionAEliminar is LiquidacionContributivo) ContributivoServices.EliminarLiquidacion(LiquidacionAEliminar.NumeroLiquidacion);
+                else SubcidiadoServices.EliminarLiquidacion(LiquidacionAEliminar.NumeroLiquidacion);
+            }
+            
+            
+        }
+
+        public void ModificarLiquidacion()
+        {
+            LiquidacionAfiliado Liquidacion = BuscarLiquidacion();
         }
         public void MostrarInformacionLiquidacion(LiquidacionAfiliado LiquidacionAMostrar)
         {
