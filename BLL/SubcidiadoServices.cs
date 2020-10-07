@@ -23,7 +23,10 @@ namespace BLL
         {
             return Repository.ListSubcidiados;
         }
-
+        public void EliminarLiquidacion(long NumeroAfiliacion)
+        {
+            
+        }
         public LiquidacionSubcidiado BuscarPorNumeroDeLiquidacion(long NumeroLiquidacion)
         {
             LiquidacionSubcidiado liquidacionEncontrada = null;

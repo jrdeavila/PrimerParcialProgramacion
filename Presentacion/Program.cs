@@ -15,6 +15,7 @@ namespace Presentacion
         {
             GestionLiquidacionAfiliado Gestion = new GestionLiquidacionAfiliado();
             Gestion.TodasLasOpciones(Gestion.MostrarItems());
+            Console.ReadKey();
         }
     }
 }
