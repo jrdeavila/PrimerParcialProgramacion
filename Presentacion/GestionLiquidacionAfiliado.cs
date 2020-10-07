@@ -53,7 +53,7 @@ namespace Presentacion
                 case 2: { new GestionLiquidacionAfiliado(); break; }
                 case 3: { new GestionLiquidacionAfiliado(); break; }
                 case 4: { new GestionLiquidacionAfiliado(); break; }
-            }
+            } 
         }
 
         public Afiliado DiligenciarAfiliado()
@@ -93,6 +93,11 @@ namespace Presentacion
                 else SubcidiadoServices.GuardarLiquidacionSubcidiado((LiquidacionSubcidiado)LiquidacionAGuardar);
             }
             else Console.WriteLine("La informacion no se guardo...");
+        }
+
+        public void ConsultarInformacion()
+        {
+
         }
         
     }
