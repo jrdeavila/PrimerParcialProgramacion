@@ -1,0 +1,16 @@
+[
+  {
+    "Afiliado": {
+      "Nombre": "jose ricardo de avila moreno",
+      "Cedula": 1003316620,
+      "Afiliacion": "Contributivo",
+      "Sexo": "Masculino",
+      "Edad": 44
+    },
+    "NumeroLiquidacion": 803020,
+    "PrimaAdicional": 1.5,
+    "DiasAfiliacion": 29,
+    "ValorUPCdiaria": 2400.0,
+    "LiquidacionAficiliacion": 104400.0
+  }
+]

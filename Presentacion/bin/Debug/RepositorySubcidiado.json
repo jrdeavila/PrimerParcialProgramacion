@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "Afiliado": {
+      "Nombre": "yoheinis de avila moreno",
+      "Cedula": 1003316620,
+      "Afiliacion": "Subcidiado",
+      "Sexo": "Femenino",
+      "Edad": 18
+    },
+    "NumeroLiquidacion": 497666,
+    "PrimaAdicional": 0.3,
+    "DiasAfiliacion": 29,
+    "ValorUPCdiaria": 2000.0,
+    "LiquidacionAficiliacion": 17400.0
+  }
+]

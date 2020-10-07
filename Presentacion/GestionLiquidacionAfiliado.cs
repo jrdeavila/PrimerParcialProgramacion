@@ -18,6 +18,8 @@ namespace Presentacion
         {
             SubcidiadoServices = new SubcidiadoServices();
             ContributivoServices = new ContributivoServices();
+            TodasLasOpciones(MostrarItems());
+            Console.ReadKey();
         }
 
         public double isNumber(string Cadena)
@@ -38,11 +40,11 @@ namespace Presentacion
         {
             Console.Clear();
             Console.WriteLine("\t\tOpciones\n");
-            Console.WriteLine("Guardar.............(1)");
-            Console.WriteLine("Consultar..........(2)");
-            Console.WriteLine("Eliminar...........(3)");
-            Console.WriteLine("Modificar..........(4)\n");
-            Console.WriteLine("Salir..............(0)\n");
+            Console.WriteLine("Guardar.........................(1)");
+            Console.WriteLine("Consultar.......................(2)");
+            Console.WriteLine("Eliminar........................(3)");
+            Console.WriteLine("Modificar.......................(4)\n");
+            Console.WriteLine("Salir...........................(0)\n");
             return (int)isNumber("Selecione: ");
         }
 
@@ -54,9 +56,11 @@ namespace Presentacion
                 case 1: { GuardarInformacion(DiligenciarInformacion()); new GestionLiquidacionAfiliado(); break; }
                 case 2: { ConsultarInformacion(); new GestionLiquidacionAfiliado(); break; }
                 case 3: { EliminarLiquidacion(); new GestionLiquidacionAfiliado(); break; }
-                case 4: { new GestionLiquidacionAfiliado(); break; }
+                case 4: { ModificarLiquidacion(); new GestionLiquidacionAfiliado(); break; }
                 default: { new GestionLiquidacionAfiliado(); break; }
-            } 
+            }
+            Console.ReadKey();
+
         }
 
         public Afiliado DiligenciarAfiliado()
@@ -135,26 +139,51 @@ namespace Presentacion
             {
                 if (LiquidacionAEliminar is LiquidacionContributivo) ContributivoServices.EliminarLiquidacion(LiquidacionAEliminar.NumeroLiquidacion);
                 else SubcidiadoServices.EliminarLiquidacion(LiquidacionAEliminar.NumeroLiquidacion);
+                Console.WriteLine("Liquidacion ELiminada con exito");
             }
-            
-            
         }
 
         public void ModificarLiquidacion()
         {
             LiquidacionAfiliado Liquidacion = BuscarLiquidacion();
+            MostrarInformacionLiquidacion(Liquidacion);
+            if(Liquidacion != null)
+            {
+                Console.WriteLine();
+                int Edad = (int)isNumber("Edad: ");
+                Liquidacion.Afiliado.Edad = Edad;
+                Liquidacion.PrimaAdicional = Liquidacion.CalcularPrimaAdicional();
+                Liquidacion.LiquidacionAficiliacion = Liquidacion.CalcularLiquidacionAfiliacion();
+                Console.WriteLine("Cambios que se realizaron");
+                MostrarInformacionLiquidacion(Liquidacion);
+                if (Liquidacion is LiquidacionSubcidiado)
+                {
+                    SubcidiadoServices.EliminarLiquidacion(Liquidacion.NumeroLiquidacion);
+                    SubcidiadoServices.GuardarLiquidacionSubcidiado((LiquidacionSubcidiado)Liquidacion);
+                }
+                else
+                {
+                    ContributivoServices.EliminarLiquidacion(Liquidacion.NumeroLiquidacion);
+                    ContributivoServices.GuardarLiquidacionContributivo((LiquidacionContributivo)Liquidacion);
+                }
+            }
+            
         }
         public void MostrarInformacionLiquidacion(LiquidacionAfiliado LiquidacionAMostrar)
         {
-            Console.WriteLine("\tInformacion de la liquidacion");
-            Console.WriteLine("Numero de liquidacion: {0}", LiquidacionAMostrar.NumeroLiquidacion);
-            Console.WriteLine("\tInformacion del afiliado");
-            Console.WriteLine("Nombre: {0}", LiquidacionAMostrar.Afiliado.Nombre);
-            Console.WriteLine("Cedula: {0}", LiquidacionAMostrar.Afiliado.Cedula);
-            Console.WriteLine("Edad: {0}", LiquidacionAMostrar.Afiliado.Edad);
-            Console.WriteLine("Sexo: {0}", LiquidacionAMostrar.Afiliado.Sexo);
-            Console.WriteLine("\tInformacion financiera");
-            Console.WriteLine("Costo de liquidacion: ${0}", LiquidacionAMostrar.LiquidacionAficiliacion);
+            if(LiquidacionAMostrar != null)
+            {
+                Console.WriteLine("\tInformacion de la liquidacion");
+                Console.WriteLine("Numero de liquidacion: {0}", LiquidacionAMostrar.NumeroLiquidacion);
+                Console.WriteLine("\tInformacion del afiliado");
+                Console.WriteLine("Nombre: {0}", LiquidacionAMostrar.Afiliado.Nombre);
+                Console.WriteLine("Cedula: {0}", LiquidacionAMostrar.Afiliado.Cedula);
+                Console.WriteLine("Edad: {0}", LiquidacionAMostrar.Afiliado.Edad);
+                Console.WriteLine("Sexo: {0}", LiquidacionAMostrar.Afiliado.Sexo);
+                Console.WriteLine("\tInformacion financiera");
+                Console.WriteLine("Costo de liquidacion: ${0}", LiquidacionAMostrar.LiquidacionAficiliacion);
+            }
+            
         }
 
     }
