@@ -1,0 +1,12 @@
+D:\Escritorio\Parcial\AfiliacionUPC\Presentacion\obj\Debug\Presentacion.csprojAssemblyReference.cache
+D:\Escritorio\Parcial\AfiliacionUPC\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+D:\Escritorio\Parcial\AfiliacionUPC\Presentacion\bin\Debug\Presentacion.exe.config
+D:\Escritorio\Parcial\AfiliacionUPC\Presentacion\bin\Debug\Presentacion.exe
+D:\Escritorio\Parcial\AfiliacionUPC\Presentacion\bin\Debug\Presentacion.pdb
+D:\Escritorio\Parcial\AfiliacionUPC\Presentacion\bin\Debug\BLL.dll
+D:\Escritorio\Parcial\AfiliacionUPC\Presentacion\bin\Debug\Entity.dll
+D:\Escritorio\Parcial\AfiliacionUPC\Presentacion\bin\Debug\BLL.pdb
+D:\Escritorio\Parcial\AfiliacionUPC\Presentacion\bin\Debug\Entity.pdb
+D:\Escritorio\Parcial\AfiliacionUPC\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+D:\Escritorio\Parcial\AfiliacionUPC\Presentacion\obj\Debug\Presentacion.exe
+D:\Escritorio\Parcial\AfiliacionUPC\Presentacion\obj\Debug\Presentacion.pdb

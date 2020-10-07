@@ -1,0 +1,9 @@
+D:\Escritorio\Parcial\AfiliacionUPC\DAL\bin\Debug\DAL.dll
+D:\Escritorio\Parcial\AfiliacionUPC\DAL\bin\Debug\DAL.pdb
+D:\Escritorio\Parcial\AfiliacionUPC\DAL\bin\Debug\Entity.dll
+D:\Escritorio\Parcial\AfiliacionUPC\DAL\bin\Debug\Entity.pdb
+D:\Escritorio\Parcial\AfiliacionUPC\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\Escritorio\Parcial\AfiliacionUPC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Escritorio\Parcial\AfiliacionUPC\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Escritorio\Parcial\AfiliacionUPC\DAL\obj\Debug\DAL.dll
+D:\Escritorio\Parcial\AfiliacionUPC\DAL\obj\Debug\DAL.pdb

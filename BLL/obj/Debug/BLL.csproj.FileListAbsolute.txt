@@ -1,0 +1,11 @@
+D:\Escritorio\Parcial\AfiliacionUPC\BLL\bin\Debug\BLL.dll
+D:\Escritorio\Parcial\AfiliacionUPC\BLL\bin\Debug\BLL.pdb
+D:\Escritorio\Parcial\AfiliacionUPC\BLL\bin\Debug\DAL.dll
+D:\Escritorio\Parcial\AfiliacionUPC\BLL\bin\Debug\Entity.dll
+D:\Escritorio\Parcial\AfiliacionUPC\BLL\bin\Debug\DAL.pdb
+D:\Escritorio\Parcial\AfiliacionUPC\BLL\bin\Debug\Entity.pdb
+D:\Escritorio\Parcial\AfiliacionUPC\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+D:\Escritorio\Parcial\AfiliacionUPC\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\Escritorio\Parcial\AfiliacionUPC\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\Escritorio\Parcial\AfiliacionUPC\BLL\obj\Debug\BLL.dll
+D:\Escritorio\Parcial\AfiliacionUPC\BLL\obj\Debug\BLL.pdb
