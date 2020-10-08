@@ -53,14 +53,12 @@ namespace Presentacion
             switch (item)
             {
                 case 0: { break; }
-                case 1: { GuardarInformacion(DiligenciarInformacion()); new GestionLiquidacionAfiliado(); break; }
-                case 2: { ConsultarInformacion(); new GestionLiquidacionAfiliado(); break; }
-                case 3: { EliminarLiquidacion(); new GestionLiquidacionAfiliado(); break; }
-                case 4: { ModificarLiquidacion(); new GestionLiquidacionAfiliado(); break; }
+                case 1: { GuardarInformacion(DiligenciarInformacion()); Console.ReadKey(); new GestionLiquidacionAfiliado(); break; }
+                case 2: { ConsultarInformacion(); Console.ReadKey(); new GestionLiquidacionAfiliado(); break; }
+                case 3: { EliminarLiquidacion(); Console.ReadKey(); new GestionLiquidacionAfiliado(); break; }
+                case 4: { ModificarLiquidacion(); Console.ReadKey(); new GestionLiquidacionAfiliado(); break; }
                 default: { new GestionLiquidacionAfiliado(); break; }
             }
-            Console.ReadKey();
-
         }
 
         public Afiliado DiligenciarAfiliado()
@@ -146,6 +144,7 @@ namespace Presentacion
         public void ModificarLiquidacion()
         {
             LiquidacionAfiliado Liquidacion = BuscarLiquidacion();
+            Console.WriteLine();
             MostrarInformacionLiquidacion(Liquidacion);
             if(Liquidacion != null)
             {

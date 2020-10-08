@@ -1,16 +1,16 @@
 [
   {
     "Afiliado": {
-      "Nombre": "jose ricardo de avila moreno",
-      "Cedula": 1003316620,
+      "Nombre": "madelene de jesus moreno andrade",
+      "Cedula": 49775730,
       "Afiliacion": "Contributivo",
-      "Sexo": "Masculino",
-      "Edad": 44
+      "Sexo": "Femenino",
+      "Edad": 47
     },
-    "NumeroLiquidacion": 803020,
-    "PrimaAdicional": 1.5,
+    "NumeroLiquidacion": 287080,
+    "PrimaAdicional": 3.0,
     "DiasAfiliacion": 29,
     "ValorUPCdiaria": 2400.0,
-    "LiquidacionAficiliacion": 104400.0
+    "LiquidacionAficiliacion": 208800.0
   }
 ]
